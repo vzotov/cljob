@@ -209,7 +209,7 @@ App.StatesView = Backbone.View.extend({
     },
     render: function () {
         this.parseLocation();
-        this.$el.appendTo(this.container);
+        this.$el.insertAfter(this.container.find("form"));
 
         var that = this;
         this.$el.on("change", function () {
